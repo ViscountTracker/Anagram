@@ -68,14 +68,12 @@ namespace Anagram
 
                 if (!char.IsLetter(rawWord[i]))
                 {
-                    rawInverted.Replace(rawWord[i].ToString(), "");
+                    rawInverted.Replace(rawWord[i].ToString(),"");
                 }
-
             }
 
             for (int i = 0; i < rawWord.Length; i++)
             {
-
                 if (!char.IsLetter(rawWord[i]))
                 {
                     rawInvertedNew.Append(rawWord[i]);
@@ -85,7 +83,6 @@ namespace Anagram
                     rawInvertedNew.Append(rawInverted[0]);
                     rawInverted = rawInverted.Remove(0, 1);
                 }
-
             }
             return rawInvertedNew.ToString();
         }

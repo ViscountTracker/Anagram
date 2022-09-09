@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Anagram
-    //original  project 
+ //original  project 
 
 {
     class Program
@@ -18,13 +18,13 @@ namespace Anagram
             Console.Write("Enter the string: ");
             inputString = Console.ReadLine();
 
-            StringManager stringManager = new/*StringManager*/(inputString);
+            StringManager stringManager = new StringManager(inputString);
 
             resultString = stringManager.ChooseWord();
 
             Console.WriteLine(String.Format("Your result: {0}", resultString));
 
-            Console.ReadKey();
+             Console.ReadKey();
         }
     }
 }
